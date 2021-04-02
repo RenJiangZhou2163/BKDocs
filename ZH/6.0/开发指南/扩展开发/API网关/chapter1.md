@@ -147,7 +147,7 @@ export PAAS_LOGGING_DIR=/data/bkce/logs/open_paas
 # INSTALL_PATH 表示项目安装基准目录，比如：/data/bkce
 # 重启指令
 workon open_paas-paas
-supervisorctl -c $INSTALL_PATH/etc/supervisor-open_paas.conf restart esb
+systemctl restart bk-paas-esb.service
 ```
 新组件的访问地址为：
 
